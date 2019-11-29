@@ -1,0 +1,32 @@
+
+.content-container {
+    text-align: center;
+}
+
+.title {
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.title::after {
+    content: "";
+    width: 40%;
+    left: 30%;
+    position: absolute;
+    border: 0.5px solid rgb(134, 130, 130);
+}
+
+.title h1 {
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.title h4 {
+    color: rgb(124, 120, 120);
+    font-weight: 300;
+}
+
+.footer {
+    margin-top: 30px;
+}

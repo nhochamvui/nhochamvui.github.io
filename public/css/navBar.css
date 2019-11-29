@@ -1,0 +1,37 @@
+/* .sticky-nav {
+    position: sticky;
+    bottom: 0px;
+} */
+
+.navbar {
+    background: rgba(218, 212, 212, 0);
+}
+
+.nav-brand {
+    color: white;
+}
+/* 
+.nav-logo {
+    object-fit: contain;
+    width: 100px;
+} */
+
+.nav-cus {
+    color: white;
+    opacity: 0.8;
+    transition: .2s;
+}
+
+.nav-cus:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    /* border-bottom: 1px solid white; */
+}
+
+@media (min-width: 992px) {
+    .login {
+        position: absolute;
+        /* justify-content: flex-end; */
+        right: 10px;
+    }
+}

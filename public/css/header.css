@@ -1,0 +1,37 @@
+#parallax {
+    background-image: url('../img/header.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;;
+}
+
+#overlay {
+    height: 100%;
+    /* background-color: rgba(171, 218, 226, 0.329); */
+    background-color:  rgba(0, 0, 0, 0.404);
+    /* color: rgba(182, 19, 19, 0.568); */
+}
+
+#overlay #title {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding-top: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 8px;
+    animation: text 3s 1;
+}
+
+@keyframes text {
+    30% {
+        letter-spacing: 30px;
+        /* margin-bottom: -40px; */
+    }
+
+    85% {
+        letter-spacing: 8px;
+        /* margin-bottom: -40px; */
+    }
+}
