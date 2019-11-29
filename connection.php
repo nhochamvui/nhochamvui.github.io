@@ -4,7 +4,7 @@ class DB {
     private static $dbname = "foodmenu";
     private static $username = "root";
     private static $password = "";
-    private static $conn = null;
+    public static $conn = null;
 
     public static function createConnection() {
         try {
@@ -22,5 +22,13 @@ class DB {
         }
 
         return self::$conn;
+    }
+    public static function checkConnection()
+    {
+        if(self::$conn)
+        {
+            echo " => connected!";
+        }
+        else echo "not connect!";
     }
 }

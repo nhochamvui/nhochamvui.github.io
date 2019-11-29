@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <?php echo $content?>
+    <?= @$content ?>
+    <?php //echo $content;?>
 </body>
 
 </html>

@@ -5,7 +5,7 @@ class FoodController extends Controller{
     }
 
     public static function loadMenu() {
-
+        echo "hello";
     }
 
     public static function editMenu() {

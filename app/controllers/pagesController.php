@@ -16,7 +16,11 @@ class PagesController extends Controller {
     }
 
     public function cart() {
-        echo "cart";
+        echo " => Pages Controller has been called!";
+        echo " => calling cart controller...";
+        include_once 'cartController.php';
+        $cartController = new Cart();
+        $cartController->loadItems();
     }
 
     public function error() {

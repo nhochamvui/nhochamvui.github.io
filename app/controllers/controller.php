@@ -3,11 +3,15 @@
 // $conn = DB::createConnection();
 class Controller {
     protected $folder;
-
-    public function render($view) {
-        // require_once "app/views/pages/" . $view . ".php";
-        $target = 'app/views/' . $this->folder .'/'. $view . '.php'; 
+    protected $view;
+    public function __construct()
+    {
+    }
+    public function render($view, $data = array()) {
+        $target = "app/views/pages/" . $view . ".php";
+        // $target = 'app/views/' . $this->folder .'/'. $view . '.php';
         if (is_file($target)) {
+            extract($data);
             ob_start();
             require_once $target;
             $content = ob_get_clean();
